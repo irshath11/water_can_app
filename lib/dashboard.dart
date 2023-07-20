@@ -27,9 +27,9 @@ class _DashBoardState extends State<DashBoard> {
           color: Colors.transparent,
           child: Image.asset('assets/images/waterDash.png')),
          const SizedBox(height: 200),
-         const Button(text: "New Record", colorBg: Colors.blue, textColor: Colors.white),
+         Button(text: "New Record", colorBg: Colors.blue, textColor: Colors.white, onTapAction: () {}),
          const SizedBox(height: 20),
-         const Button(text: "Previous Record", colorBg: Colors.blue, textColor: Colors.white),
+         Button(text: "Previous Record", colorBg: Colors.blue, textColor: Colors.white, onTapAction: () {}),
         ],
       ),
     );

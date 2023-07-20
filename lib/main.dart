@@ -25,8 +25,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,20 +34,20 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Container(
-              padding:const EdgeInsets.all(30),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20)
-              ),
-                child: Image.asset('assets/images/water.png'),
-              ),
-            InkWell(
-              onTap: () {
+              padding: const EdgeInsets.all(30),
+              decoration:
+                  BoxDecoration(borderRadius: BorderRadius.circular(20)),
+              child: Image.asset('assets/images/water.png'),
+            ),
+            Button(
+              text: 'LogIn',
+              colorBg: Colors.white,
+              textColor: Colors.black,
+              onTapAction: () {
                 Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const DashBoard())
-                );
+                    MaterialPageRoute(builder: (context) => const DashBoard()));
               },
-             child: Button(text: 'LogIn', colorBg: Colors.white, textColor: Colors.black),
-            )
+            ),
           ],
         ),
       ),
