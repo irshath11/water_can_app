@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
               text: 'LogIn',
               colorBg: Colors.white,
               textColor: Colors.black,
+              width: MediaQuery.of(context).size.width - 40,
               onTapAction: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const DashBoard()));
